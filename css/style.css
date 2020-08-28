@@ -14,6 +14,50 @@
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/raleway-v17-latin-700.woff2') format('woff2'),
+    url('../fonts/raleway-v17-latin-700.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'),
+    url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'),
+    / url('../fonts/roboto-v20-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+    url('../fonts/roboto-v20-latin-500.woff2') format('woff2'),
+    url('./fonts/roboto-v20-latin-500.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+    url('../fonts/roboto-v20-latin-700.woff2') format('woff2'),
+    url('../fonts/roboto-v20-latin-700.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Roboto Black'), local('Roboto-Black'),
+    url('../fonts/roboto-v20-latin-900.woff2') format('woff2'),
+    / url('../fonts/roboto-v20-latin-900.woff') format('woff');
+}
+
 html {
   box-sizing: border-box;
 }
@@ -111,14 +155,6 @@ footer .logo {
   border-radius: 2px;
 }
 
-.nav,
-.contacts {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-
 .list {
   list-style: none;
   padding: 0;
@@ -144,6 +180,11 @@ footer .logo {
 }
 
 .nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
   color: var(--title-text-color);
 
   transition: color var(--transition-duration) var(--transition-timing-function);
@@ -154,6 +195,11 @@ footer .logo {
 }
 
 .contacts-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
   color: var(--basic-text-color);
 
   transition: color var(--transition-duration) var(--transition-timing-function);
