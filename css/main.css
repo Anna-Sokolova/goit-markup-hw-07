@@ -391,7 +391,6 @@ button {
 .nav {
   display: flex;
   align-items: center;
-  margin-right: auto;
 }
 
 .nav-item {
@@ -438,9 +437,11 @@ button {
 }
 
 .contacts-list {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
+  display: flex;
+  align-items: baseline;
+  margin-left: auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contacts-list .contacts-item:not(:last-child) {
@@ -448,6 +449,9 @@ button {
 }
 
 .contacts-link {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;

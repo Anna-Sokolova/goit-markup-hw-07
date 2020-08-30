@@ -1,7 +1,9 @@
 .contacts-list {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
+  display: flex;
+  align-items: baseline;
+  margin-left: auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   & .contacts-item:not(:last-child) {
     margin-right: 30px;
@@ -9,6 +11,10 @@
 }
 
 .contacts-link {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
