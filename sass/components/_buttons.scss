@@ -1,0 +1,40 @@
+.button {
+  display: inline-flex;
+  justify-content: center;
+  min-width: 200px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: $white-text-color;
+  background: $accent-color;
+
+  transform: scale(1);
+  transition: scale $transition-duration $transition-timing-function;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+
+    transform: scale(1.05);
+  }
+}
+
+.btn-wrap {
+  text-align: center;
+}
+
+.btn-submit:disabled,
+.btn-submit:disabled:hover {
+  background-color: $basic-text-color;
+  color: $title-text-color;
+}

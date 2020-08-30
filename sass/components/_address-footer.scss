@@ -1,0 +1,29 @@
+.address-list {
+  margin-top: 20px;
+}
+
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: $white-text-color;
+}
+
+.address-link {
+  margin-top: 9px;
+  margin-bottom: 0;
+
+  display: inline-block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: $footer-contacts-color;
+}

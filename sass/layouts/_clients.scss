@@ -1,0 +1,38 @@
+.clients-list {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-item {
+  width: calc((100% - 150px) / 6);
+  margin-right: 30px;
+
+  &:nth-child(6n) {
+    margin-right: 0;
+  }
+}
+
+.clients-link {
+  display: inline-flex;
+  width: 170px;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #afb1b8;
+  fill: currentColor;
+
+  transition: color $transition-duration $transition-timing-function,
+    border $transition-duration $transition-timing-function;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    color: $accent-color;
+  }
+}

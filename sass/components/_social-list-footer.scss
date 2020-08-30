@@ -1,0 +1,30 @@
+.social-title {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.43;
+  text-transform: uppercase;
+
+  color: $white-text-color;
+}
+
+.social-list.footer {
+  width: 206px;
+  margin-right: auto;
+}
+
+.social-link-footer {
+  background-color: $footer-background-social-links;
+  fill: $white-text-color;
+
+  transition: color $transition-duration $transition-timing-function,
+    background-color $transition-duration $transition-timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $white-text-color;
+  }
+}

@@ -1,0 +1,75 @@
+.advantages-section {
+  padding-top: 94px;
+  padding-bottom: 0;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.advantages-item {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+/* .advantages-item:not(:last-child) {
+	margin-right: 30px;
+} */
+
+.advantages-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  border-radius: 4px;
+
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $accent-background-color;
+}
+
+.icon-sputnik::before {
+  background-image: url(../img/svg/спутник.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../img/svg/часы.svg);
+}
+
+.icon-monitor::before {
+  background-image: url(../img/svg/монитор.svg);
+}
+
+.icon-cosmonaut::before {
+  background-image: url(../img/svg/космонавт.svg);
+}
+
+.advantages-title {
+  margin-top: 30px;
+  margin-bottom: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: $title-text-color;
+}
+
+.advantages-text {
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: $basic-text-color;
+}

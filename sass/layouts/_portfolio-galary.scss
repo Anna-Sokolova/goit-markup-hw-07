@@ -1,0 +1,100 @@
+.galary-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.galary-item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  &:nth-child(3n) {
+    margin-right: 0px;
+  }
+
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+}
+
+.card {
+  transition: box-shadow &transition-duration &transition-timing-function;
+
+  .project-card:hover &,
+  .project-card:focus & {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.img-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.text-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+
+  padding: 63px 24px;
+
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  color: $white-text-color;
+  background: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(100%);
+  transition: transform $transition-duration $transition-timing-function;
+
+  .project-card:hover &,
+  .project-card:focus & {
+    background-color: rgba(33, 150, 243, 0.9);
+    color: $white-text-color;
+
+    /* opacity: 1; */
+    transform: translateY(0);
+  }
+}
+
+.project-text {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+
+  color: $white-text-color;
+}
+
+.project-caption {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+}
+
+.project-title {
+  margin-top: 0;
+  margin-bottom: 4px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: $title-text-color;
+}
+
+.project-feature {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+
+  color: $basic-text-color;
+}

@@ -1,0 +1,50 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+
+  background-color: $basic-background-color;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+a,
+button {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+
+  color: $title-text-color;
+}
