@@ -3,46 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Studio</title>
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <title>Web Studio/Portfolio</title>
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
   </head>
 
   <body>
     <!-- Шапка сайта -->
     <header class="page-header">
       <div class="container main-nav">
-        <nav class="navigation">
-          <a href="./" class="logo">
-            <span>Web</span>
-            Studio
-          </a>
+        <nav class="nav">
+          <a href="./" class="logo"> <span>Web</span>Studio </a>
 
-          <ul class="nav list">
-            <li class="item nav">
+          <ul class="nav-list list">
+            <li class="nav-item">
               <a href="./index.html" class="nav-link">Студия</a>
             </li>
-            <li class="item nav">
+            <li class="nav-item">
               <a href="./portfolio.html" class="nav-link current">Портфолио</a>
             </li>
-            <li class="item nav">
+            <li class="nav-item">
               <a href="#" class="nav-link">Контакты</a>
             </li>
           </ul>
         </nav>
 
-        <ul class="contacts list">
-          <li class="item">
+        <ul class="contacts-list list">
+          <li class="contacts-item">
             <a href="mailto:info@devstudio.com" class="contacts-link">
-              <svg class="contacts list icon-contacts" width="16" height="12">
+              <svg class="icon-contacts" width="16" height="12">
                 <use href="./img/svg/sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="item">
+          <li class="contacts-item">
             <a href="tel:+380961111111" class="contacts-link">
-              <svg class="contacts list icon-contacts" width="10" height="16">
+              <svg class="icon-contacts" width="10" height="16">
                 <use href="./img/svg/sprite.svg#icon-tel"></use>
               </svg>
               +38 096 111 11 11
@@ -59,28 +55,28 @@
           <h1 class="section-title visually-hidden">Портфолио</h1>
 
           <div class="filter-container">
-            <ul class="list button-galary">
-              <li class="button-item">
+            <ul class="filter-galary list">
+              <li class="filter-item">
                 <button type="button" class="filter-button">Все</button>
               </li>
-              <li class="button-item">
+              <li class="filter-item">
                 <button type="button" class="filter-button">Веб-сайты</button>
               </li>
-              <li class="button-item">
+              <li class="filter-item">
                 <button type="button" class="filter-button">Приложения</button>
               </li>
-              <li class="button-item">
+              <li class="filter-item">
                 <button type="button" class="filter-button">Дизайн</button>
               </li>
-              <li class="button-item">
+              <li class="filter-item">
                 <button type="button" class="filter-button">Маркетинг</button>
               </li>
             </ul>
           </div>
 
           <div class="galary-container">
-            <ul class="list galary">
-              <li class="item-galary">
+            <ul class="galary-list list">
+              <li class="galary-item">
                 <a href="#" class="project-card">
                   <div class="card">
                     <div class="img-card">
@@ -106,7 +102,7 @@
                   </div>
                 </a>
               </li>
-              <li class="item-galary">
+              <li class="galary-item">
                 <a href="#" class="project-card">
                   <div class="card">
                     <div class="img-card">
@@ -133,7 +129,7 @@
                   </div>
                 </a>
               </li>
-              <li class="item-galary">
+              <li class="galary-item">
                 <a href="#" class="project-card">
                   <div class="card">
                     <div class="img-card">
@@ -158,7 +154,7 @@
                   </div>
                 </a>
               </li>
-              <li class="item-galary">
+              <li class="galary-item">
                 <a href="#" class="project-card">
                   <div class="card">
                     <div class="img-card">
@@ -183,7 +179,7 @@
                   </div>
                 </a>
               </li>
-              <li class="item-galary">
+              <li class="galary-item">
                 <a href="#" class="project-card">
                   <div class="card">
                     <div class="img-card">
@@ -208,7 +204,7 @@
                   </div>
                 </a>
               </li>
-              <li class="item-galary">
+              <li class="galary-item">
                 <a href="#" class="project-card">
                   <div class="card">
                     <div class="img-card">
@@ -233,7 +229,7 @@
                   </div>
                 </a>
               </li>
-              <li class="item-galary">
+              <li class="galary-item">
                 <a href="#" class="project-card">
                   <div class="card">
                     <div class="img-card">
@@ -258,7 +254,7 @@
                   </div>
                 </a>
               </li>
-              <li class="item-galary">
+              <li class="galary-item">
                 <a href="#" class="project-card">
                   <div class="card">
                     <div class="img-card">
@@ -283,7 +279,7 @@
                   </div>
                 </a>
               </li>
-              <li class="item-galary">
+              <li class="galary-item">
                 <a href="#" class="project-card">
                   <div class="card">
                     <div class="img-card">
@@ -318,22 +314,19 @@
     <footer class="footer">
       <div class="container main-footer">
         <div class="footer-box logo-contact">
-          <a href="./" class="logo">
-            <span>Web</span>
-            Studio
-          </a>
+          <a href="./" class="logo logo-footer"> <span>Web</span>Studio</a>
 
           <address>
-            <ul class="list address">
-              <li class="item-address">
-                <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
+            <ul class="address-list list">
+              <li class="address-item">
+                <p class="address-text">г. Киев, пр-т Леси Украинки, 26</p>
               </li>
-              <li class="item-address">
+              <li class="address-item">
                 <a href="mailto:info@example.com" class="address-link"
                   >info@example.com</a
                 >
               </li>
-              <li class="item-address">
+              <li class="address-item">
                 <a href="tel:+380991111111" class="address-link"
                   >+38 099 111 11 11</a
                 >
@@ -343,54 +336,54 @@
         </div>
 
         <div class="footer-box social">
-          <p class="social title">Присоединяйтесь</p>
-          <ul class="list social footer">
-            <li class="item-social footer">
+          <p class="social-title">Присоединяйтесь</p>
+          <ul class="social-list footer list">
+            <li class="social-item footer">
               <a
                 href="#"
                 target="_blank"
                 rel="noreferrer noopener"
                 aria-label="Instagram"
-                class="social-link footer"
+                class="social-link social-link-footer"
               >
                 <svg class="icon-social" width="20" height="20">
                   <use href="./img/svg/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="item-social footer">
+            <li class="social-item footer">
               <a
                 href="#"
                 target="_blank"
                 rel="noreferrer noopener"
                 aria-label="Twitter"
-                class="social-link footer"
+                class="social-link social-link-footer"
               >
                 <svg class="icon-social" width="20" height="20">
                   <use href="./img/svg/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="item-social footer">
+            <li class="social-item footer">
               <a
                 href="#"
                 target="_blank"
                 rel="noreferrer noopener"
                 aria-label="Facebook"
-                class="social-link footer"
+                class="social-link social-link-footer"
               >
                 <svg class="icon-social" width="20" height="20">
                   <use href="./img/svg/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="item-social footer">
+            <li class="social-item footer">
               <a
                 href="#"
                 target="_blank"
                 rel="noreferrer noopener"
                 aria-label="LinkedIn"
-                class="social-link footer"
+                class="social-link social-link-footer"
               >
                 <svg class="icon-social" width="20" height="20">
                   <use href="./img/svg/sprite.svg#icon-linkedin"></use>
