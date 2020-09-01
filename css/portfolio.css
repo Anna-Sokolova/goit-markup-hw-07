@@ -313,7 +313,7 @@ summary {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
   background-color: #ffffff;
 }
@@ -369,7 +369,7 @@ button {
 
 .logo {
   margin-right: 85px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 1.19;
   color: #000000;
