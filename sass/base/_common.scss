@@ -1,3 +1,7 @@
+* {
+  outline-color: $accent-color;
+}
+
 body {
   font-family: $font-family-main;
   letter-spacing: 0.03em;
@@ -29,12 +33,6 @@ a,
 button {
   text-decoration: none;
   cursor: pointer;
-}
-
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .section-title {

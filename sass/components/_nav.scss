@@ -29,6 +29,7 @@
 }
 
 .nav-list {
+  @extend %list;
   display: flex;
 
   & .nav-item:not(:last-child) {

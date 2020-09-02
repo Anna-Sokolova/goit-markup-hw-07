@@ -1,3 +1,9 @@
+.nav-list, .contacts-list, .social-list, .filter-galary, .galary-list, .address-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 .section-title.visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -312,6 +318,10 @@ summary {
   src: local("Roboto Black"), local("Roboto-Black"), url("../fonts/roboto-v20-latin_cyrillic-900.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-900.woff") format("woff");
 }
 
+* {
+  outline-color: #2196f3;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
@@ -342,12 +352,6 @@ a,
 button {
   text-decoration: none;
   cursor: pointer;
-}
-
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .section-title {

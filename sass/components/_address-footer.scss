@@ -1,4 +1,5 @@
 .address-list {
+  @extend %list;
   margin-top: 20px;
 }
 
