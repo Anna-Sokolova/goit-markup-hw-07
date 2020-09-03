@@ -1,8 +1,8 @@
 .clients-list {
   @extend %list;
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  // display: inline-flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
   align-items: center;
 }
 
@@ -16,11 +16,11 @@
 }
 
 .clients-link {
-  display: inline-flex;
-  width: 170px;
-  height: 90px;
-  justify-content: center;
-  align-items: center;
+  // display: inline-flex;
+  // width: 170px;
+  // height: 90px;
+  // justify-content: center;
+  // align-items: center;
 
   border: 1px solid #afb1b8;
   box-sizing: border-box;

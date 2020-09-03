@@ -1,11 +1,11 @@
-.main-nav {
-  display: flex;
-}
+// .main-nav {
+//   display: flex;
+// }
 
-.nav {
-  display: flex;
-  align-items: center;
-}
+// .nav {
+//   display: flex;
+//   align-items: center;
+// }
 
 .nav-item {
   position: relative;
@@ -30,7 +30,7 @@
 
 .nav-list {
   @extend %list;
-  display: flex;
+  // display: flex;
 
   & .nav-item:not(:last-child) {
     margin-right: 50px;

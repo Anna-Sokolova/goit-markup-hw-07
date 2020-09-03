@@ -329,10 +329,28 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .container {
+    width: 1170px;
+  }
 }
 
 section {
@@ -387,15 +405,6 @@ button {
   color: #ffffff;
 }
 
-.main-nav {
-  display: flex;
-}
-
-.nav {
-  display: flex;
-  align-items: center;
-}
-
 .nav-item {
   position: relative;
   padding-top: 32px;
@@ -412,10 +421,6 @@ button {
   height: 4px;
   background: #2196f3;
   border-radius: 2px;
-}
-
-.nav-list {
-  display: flex;
 }
 
 .nav-list .nav-item:not(:last-child) {
@@ -440,9 +445,6 @@ button {
 }
 
 .contacts-list {
-  display: flex;
-  align-items: baseline;
-  margin-left: auto;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -452,9 +454,6 @@ button {
 }
 
 .contacts-link {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -506,11 +505,6 @@ button {
   color: #212121;
 }
 
-.social-list {
-  display: flex;
-  justify-content: center;
-}
-
 .social-item:not(:last-child) {
   margin-right: 10px;
 }
@@ -530,11 +524,6 @@ button {
 .social-link:hover, .social-link:focus {
   background-color: #2196f3;
   fill: #ffffff;
-}
-
-.filter-galary {
-  display: flex;
-  justify-content: center;
 }
 
 .filter-item:not(:last-child) {
@@ -563,11 +552,6 @@ button {
   color: #ffffff;
   background: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.galary-list {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .galary-item {
@@ -660,8 +644,6 @@ button {
 }
 
 .main-footer {
-  display: flex;
-  align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -736,7 +718,6 @@ button {
 
 .email {
   display: block;
-  width: 358px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -750,10 +731,6 @@ button {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
-}
-
-.form-email {
-  display: flex;
 }
 
 .form-email input::placeholder {
