@@ -1,5 +1,6 @@
 * {
-  outline-color: $accent-color;
+  // outline-color: $accent-color;
+  outline: 2px solid rgb(173, 17, 121);
 }
 
 body {
@@ -10,28 +11,32 @@ body {
 }
 
 .container {
-  // width: 1200px;
   width: 100%;
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: $mobile) {
     width: 480px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 768px;
   }
 
-  @media screen and (min-width: 1170px) {
-    width: 1170px;
+  @media screen and (min-width: $desktop) {
+    width: 1200px;
   }
 }
 
 section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 p {
@@ -40,6 +45,8 @@ p {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 a,
@@ -50,12 +57,19 @@ button {
 
 .section-title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
 
   color: $title-text-color;
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    font-size: 36px;
+  }
 }

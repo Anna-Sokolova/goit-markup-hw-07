@@ -320,7 +320,7 @@ summary {
 }
 
 * {
-  outline-color: #2196f3;
+  outline: 2px solid #ad1179;
 }
 
 body {
@@ -348,15 +348,22 @@ body {
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1200px;
   }
 }
 
 section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 p {
@@ -365,6 +372,8 @@ p {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 a,
@@ -375,12 +384,20 @@ button {
 
 .section-title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .page-header {
@@ -476,7 +493,7 @@ button {
   display: inline-flex;
   justify-content: center;
   min-width: 200px;
-  padding: 10px 32px;
+  padding: 10px 0;
   border-radius: 4px;
   border: 1px solid transparent;
   font-family: inherit;
@@ -528,6 +545,8 @@ button {
 }
 
 .overlay {
+  display: block;
+  max-width: 1600px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -540,34 +559,41 @@ button {
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 30px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
 }
 
-.advantages-section {
-  padding-top: 94px;
-  padding-bottom: 0;
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
-.advantages-item {
-  width: calc((100% - 90px) / 4);
-  margin-right: 30px;
-}
-
-.advantages-item:nth-child(4n) {
-  margin-right: 0;
+@media screen and (min-width: 1200px) {
+  .advantages-section {
+    padding-top: 94px;
+    padding-bottom: 0;
+  }
 }
 
 /* .advantages-item:not(:last-child) {
@@ -618,6 +644,17 @@ button {
   font-size: 14px;
   line-height: 1.71;
   color: #757575;
+}
+
+@media screen and (max-width: 1199px) {
+  .work-section {
+    display: none;
+  }
+}
+
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .work-item {
